@@ -29,7 +29,7 @@ namespace Parcial3
         {
             // yo cree este metodo rapido para convertir el texto a numeros sin darme muchas vueltas
             string texto = txtVentas.Text;
-            string[] partes = texto.Split(new char[] { '\\n', '\\r', ',', ';', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] partes = texto.Split(new char[] { '\n', '\r', ',', ';', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             List<double> lista = new List<double>();
 
             foreach (string parte in partes)
