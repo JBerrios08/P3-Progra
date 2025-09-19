@@ -12,24 +12,22 @@ namespace Parcial3
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1() //metodo 1
         {
             InitializeComponent();
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e) //metodo 2
         {
-            // yo se que deberia validar mejor pero voy con prisita
-            double[] ventas = ObtenerVentas();
-            double[] ventasFiltradas = FiltrarVentasAltas(ventas);
+            double[] ventas = ObtenerVentas(); //arreglo 1
+            double[] ventasFiltradas = FiltrarVentasAltas(ventas); //arreglo 2
             MostrarResultados(ventasFiltradas);
         }
 
-        private double[] ObtenerVentas()
+        private double[] ObtenerVentas() //metodo 3
         {
-            // yo cree este metodo rapido para convertir el texto a numeros sin darme muchas vueltas
             string texto = txtVentas.Text;
-            string[] partes = texto.Split(new char[] { '\n', '\r', ',', ';', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] partes = texto.Split(new char[] { '\n', '\r', ',', ';', ' ' }, StringSplitOptions.RemoveEmptyEntries); //arreglo 3
             List<double> lista = new List<double>();
 
             foreach (string parte in partes)
@@ -43,15 +41,13 @@ namespace Parcial3
             return lista.ToArray();
         }
 
-        private double[] FiltrarVentasAltas(double[] ventas)
+        private double[] FiltrarVentasAltas(double[] ventas) //metodo 4
         {
-            // yo filtro aqui solo las ventas que llegan a 200 por que eso me pidieron
             return ventas.Where(v => v >= 200).ToArray();
         }
 
-        private void MostrarResultados(double[] ventasFiltradas)
+        private void MostrarResultados(double[] ventasFiltradas) //metodo 5
         {
-            // yo actualizo la interfaz segun lo que salio de los calculos
             if (ventasFiltradas.Length == 0)
             {
                 lblPromedioValor.Text = "--";
@@ -71,6 +67,11 @@ namespace Parcial3
             lblMaximoValor.Text = maximo.ToString("F2");
             lblMinimoValor.Text = minimo.ToString("F2");
             lblAviso.Text = "";
+        }
+
+        private void lblInstrucciones_Click(object sender, EventArgs e) //metodo 6
+        {
+
         }
     }
 }

@@ -57,9 +57,10 @@ namespace Parcial3
             this.panelPrincipal.Controls.Add(this.lblTitulo);
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.panelPrincipal.Margin = new System.Windows.Forms.Padding(4);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Padding = new System.Windows.Forms.Padding(32);
-            this.panelPrincipal.Size = new System.Drawing.Size(784, 511);
+            this.panelPrincipal.Padding = new System.Windows.Forms.Padding(43, 39, 43, 39);
+            this.panelPrincipal.Size = new System.Drawing.Size(1045, 629);
             this.panelPrincipal.TabIndex = 0;
             // 
             // panelResultados
@@ -77,10 +78,11 @@ namespace Parcial3
             this.panelResultados.Controls.Add(this.lblMaximoTitulo);
             this.panelResultados.Controls.Add(this.lblConteoTitulo);
             this.panelResultados.Controls.Add(this.lblPromedioTitulo);
-            this.panelResultados.Location = new System.Drawing.Point(35, 286);
+            this.panelResultados.Location = new System.Drawing.Point(47, 352);
+            this.panelResultados.Margin = new System.Windows.Forms.Padding(4);
             this.panelResultados.Name = "panelResultados";
-            this.panelResultados.Padding = new System.Windows.Forms.Padding(24);
-            this.panelResultados.Size = new System.Drawing.Size(714, 173);
+            this.panelResultados.Padding = new System.Windows.Forms.Padding(32, 30, 32, 30);
+            this.panelResultados.Size = new System.Drawing.Size(951, 212);
             this.panelResultados.TabIndex = 4;
             // 
             // lblAviso
@@ -88,9 +90,10 @@ namespace Parcial3
             this.lblAviso.AutoSize = true;
             this.lblAviso.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAviso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.lblAviso.Location = new System.Drawing.Point(27, 128);
+            this.lblAviso.Location = new System.Drawing.Point(36, 158);
+            this.lblAviso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(0, 15);
+            this.lblAviso.Size = new System.Drawing.Size(0, 20);
             this.lblAviso.TabIndex = 8;
             // 
             // lblMinimoValor
@@ -98,52 +101,57 @@ namespace Parcial3
             this.lblMinimoValor.AutoSize = true;
             this.lblMinimoValor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimoValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(139)))));
-            this.lblMinimoValor.Location = new System.Drawing.Point(407, 87);
+            this.lblMinimoValor.Location = new System.Drawing.Point(543, 107);
+            this.lblMinimoValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinimoValor.Name = "lblMinimoValor";
-            this.lblMinimoValor.Size = new System.Drawing.Size(31, 21);
+            this.lblMinimoValor.Size = new System.Drawing.Size(24, 28);
             this.lblMinimoValor.TabIndex = 7;
-            this.lblMinimoValor.Text = "--";
+            this.lblMinimoValor.Text = "0";
             // 
             // lblMaximoValor
             // 
             this.lblMaximoValor.AutoSize = true;
             this.lblMaximoValor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaximoValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(139)))));
-            this.lblMaximoValor.Location = new System.Drawing.Point(407, 44);
+            this.lblMaximoValor.Location = new System.Drawing.Point(543, 54);
+            this.lblMaximoValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaximoValor.Name = "lblMaximoValor";
-            this.lblMaximoValor.Size = new System.Drawing.Size(31, 21);
+            this.lblMaximoValor.Size = new System.Drawing.Size(24, 28);
             this.lblMaximoValor.TabIndex = 6;
-            this.lblMaximoValor.Text = "--";
+            this.lblMaximoValor.Text = "0";
             // 
             // lblConteoValor
             // 
             this.lblConteoValor.AutoSize = true;
             this.lblConteoValor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConteoValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(139)))));
-            this.lblConteoValor.Location = new System.Drawing.Point(173, 87);
+            this.lblConteoValor.Location = new System.Drawing.Point(231, 107);
+            this.lblConteoValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConteoValor.Name = "lblConteoValor";
-            this.lblConteoValor.Size = new System.Drawing.Size(31, 21);
+            this.lblConteoValor.Size = new System.Drawing.Size(24, 28);
             this.lblConteoValor.TabIndex = 5;
-            this.lblConteoValor.Text = "--";
+            this.lblConteoValor.Text = "0";
             // 
             // lblPromedioValor
             // 
             this.lblPromedioValor.AutoSize = true;
             this.lblPromedioValor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPromedioValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(139)))));
-            this.lblPromedioValor.Location = new System.Drawing.Point(173, 44);
+            this.lblPromedioValor.Location = new System.Drawing.Point(231, 54);
+            this.lblPromedioValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPromedioValor.Name = "lblPromedioValor";
-            this.lblPromedioValor.Size = new System.Drawing.Size(31, 21);
+            this.lblPromedioValor.Size = new System.Drawing.Size(24, 28);
             this.lblPromedioValor.TabIndex = 4;
-            this.lblPromedioValor.Text = "--";
+            this.lblPromedioValor.Text = "0";
             // 
             // lblMinimoTitulo
             // 
             this.lblMinimoTitulo.AutoSize = true;
             this.lblMinimoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblMinimoTitulo.Location = new System.Drawing.Point(304, 88);
+            this.lblMinimoTitulo.Location = new System.Drawing.Point(401, 108);
+            this.lblMinimoTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinimoTitulo.Name = "lblMinimoTitulo";
-            this.lblMinimoTitulo.Size = new System.Drawing.Size(99, 19);
+            this.lblMinimoTitulo.Size = new System.Drawing.Size(120, 23);
             this.lblMinimoTitulo.TabIndex = 3;
             this.lblMinimoTitulo.Text = "Venta mínima:";
             // 
@@ -151,9 +159,10 @@ namespace Parcial3
             // 
             this.lblMaximoTitulo.AutoSize = true;
             this.lblMaximoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblMaximoTitulo.Location = new System.Drawing.Point(301, 45);
+            this.lblMaximoTitulo.Location = new System.Drawing.Point(401, 55);
+            this.lblMaximoTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaximoTitulo.Name = "lblMaximoTitulo";
-            this.lblMaximoTitulo.Size = new System.Drawing.Size(102, 19);
+            this.lblMaximoTitulo.Size = new System.Drawing.Size(123, 23);
             this.lblMaximoTitulo.TabIndex = 2;
             this.lblMaximoTitulo.Text = "Venta máxima:";
             // 
@@ -161,9 +170,10 @@ namespace Parcial3
             // 
             this.lblConteoTitulo.AutoSize = true;
             this.lblConteoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblConteoTitulo.Location = new System.Drawing.Point(27, 88);
+            this.lblConteoTitulo.Location = new System.Drawing.Point(36, 108);
+            this.lblConteoTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConteoTitulo.Name = "lblConteoTitulo";
-            this.lblConteoTitulo.Size = new System.Drawing.Size(136, 19);
+            this.lblConteoTitulo.Size = new System.Drawing.Size(169, 23);
             this.lblConteoTitulo.TabIndex = 1;
             this.lblConteoTitulo.Text = "Ventas consideradas:";
             // 
@@ -171,9 +181,10 @@ namespace Parcial3
             // 
             this.lblPromedioTitulo.AutoSize = true;
             this.lblPromedioTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblPromedioTitulo.Location = new System.Drawing.Point(27, 45);
+            this.lblPromedioTitulo.Location = new System.Drawing.Point(36, 55);
+            this.lblPromedioTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPromedioTitulo.Name = "lblPromedioTitulo";
-            this.lblPromedioTitulo.Size = new System.Drawing.Size(130, 19);
+            this.lblPromedioTitulo.Size = new System.Drawing.Size(166, 23);
             this.lblPromedioTitulo.TabIndex = 0;
             this.lblPromedioTitulo.Text = "Promedio de ventas:";
             // 
@@ -185,9 +196,10 @@ namespace Parcial3
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(611, 225);
+            this.btnCalcular.Location = new System.Drawing.Point(421, 277);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(138, 41);
+            this.btnCalcular.Size = new System.Drawing.Size(184, 50);
             this.btnCalcular.TabIndex = 3;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -200,11 +212,12 @@ namespace Parcial3
             this.txtVentas.BackColor = System.Drawing.Color.White;
             this.txtVentas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVentas.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtVentas.Location = new System.Drawing.Point(35, 140);
+            this.txtVentas.Location = new System.Drawing.Point(47, 172);
+            this.txtVentas.Margin = new System.Windows.Forms.Padding(4);
             this.txtVentas.Multiline = true;
             this.txtVentas.Name = "txtVentas";
             this.txtVentas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtVentas.Size = new System.Drawing.Size(714, 79);
+            this.txtVentas.Size = new System.Drawing.Size(951, 97);
             this.txtVentas.TabIndex = 2;
             // 
             // lblInstrucciones
@@ -213,32 +226,36 @@ namespace Parcial3
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInstrucciones.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblInstrucciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.lblInstrucciones.Location = new System.Drawing.Point(32, 87);
+            this.lblInstrucciones.Location = new System.Drawing.Point(43, 107);
+            this.lblInstrucciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInstrucciones.Name = "lblInstrucciones";
-            this.lblInstrucciones.Size = new System.Drawing.Size(717, 50);
+            this.lblInstrucciones.Size = new System.Drawing.Size(956, 62);
             this.lblInstrucciones.TabIndex = 1;
-            this.lblInstrucciones.Text = "escribe cada venta separada por coma, espacio o salto de línea. el programa solo t" +
-    "omará las ventas de 200 en adelante.";
+            this.lblInstrucciones.Text = "Escribir cada venta separada por coma, espacio o salto de línea (solo se tomará l" +
+    "as ventas de 200 en adelante)";
+            this.lblInstrucciones.Click += new System.EventHandler(this.lblInstrucciones_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(139)))));
-            this.lblTitulo.Location = new System.Drawing.Point(28, 32);
+            this.lblTitulo.Location = new System.Drawing.Point(336, 39);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(395, 37);
+            this.lblTitulo.Size = new System.Drawing.Size(337, 46);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Promedio de ventas destacadas";
+            this.lblTitulo.Text = "Promedio de ventas";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(784, 511);
+            this.ClientSize = new System.Drawing.Size(1045, 629);
             this.Controls.Add(this.panelPrincipal);
-            this.MinimumSize = new System.Drawing.Size(800, 550);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1061, 666);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Promedio de Ventas";
