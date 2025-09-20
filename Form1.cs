@@ -19,6 +19,11 @@ namespace Parcial3
 
         private void btnCalcular_Click(object sender, EventArgs e) //metodo 2
         {
+            ProcesarVentas();
+        }
+
+        private void ProcesarVentas()
+        {
             double[] ventas = ObtenerVentas(); //arreglo 1
             double[] ventasFiltradas = FiltrarVentasAltas(ventas); //arreglo 2
             MostrarResultados(ventasFiltradas);
